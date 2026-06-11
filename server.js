@@ -8,7 +8,24 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+// Handle Private Network Access preflight requests (public to local requests)
+app.use((req, res, next) => {
+  if (req.headers['access-control-request-private-network']) {
+    res.setHeader('Access-Control-Allow-Private-Network', 'true');
+  }
+  next();
+});
+
+const allowedOrigins = [
+  process.env.CLIENT_URL,
+  'http://localhost:5173',
+  'https://spottedpoint-frontend-production.up.railway.app'
+].filter(Boolean);
+
+app.use(cors({ 
+  origin: allowedOrigins, 
+  credentials: true 
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
