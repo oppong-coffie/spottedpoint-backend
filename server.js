@@ -30,13 +30,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/auth', require('./routes/auth'));
-app.use('/projects', require('./routes/projects'));
-app.use('/blog', require('./routes/blog'));
-app.use('/team', require('./routes/team'));
-app.use('/gallery', require('./routes/gallery'));
-app.use('/contact', require('./routes/contact'));
-app.use('/media', require('./routes/media'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/projects', require('./routes/projects'));
+app.use('/api/blog', require('./routes/blog'));
+app.use('/api/team', require('./routes/team'));
+app.use('/api/gallery', require('./routes/gallery'));
+app.use('/api/contact', require('./routes/contact'));
+app.use('/api/media', require('./routes/media'));
 
 app.get('/', (req, res) => res.json({ message: 'Spotted Point Media API running' }));
 
