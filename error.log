@@ -1,0 +1,29 @@
+[2026-06-09T15:40:07.955Z] POST /api/gallery
+Error: Unknown API key your_api_key
+Stack: undefined
+
+[2026-06-09T15:53:14.761Z] POST /api/gallery
+Error: Unknown API key your_api_key
+Stack: undefined
+
+[2026-06-09T15:54:39.292Z] POST /api/gallery
+Error: Invalid cloud_name dogbgikyc
+Stack: undefined
+
+[2026-06-09T15:55:48.068Z] POST /api/gallery
+Error: Invalid cloud_name dogbgikyc
+Stack: undefined
+
+[2026-06-11T15:44:26.878Z] POST /api/team
+Error: Request aborted
+Stack: Error: Request aborted
+    at IncomingMessage.<anonymous> (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\multer\lib\make-middleware.js:118:28)
+    at IncomingMessage.emit (node:events:508:28)
+    at IncomingMessage._destroy (node:_http_incoming:221:10)
+    at _destroy (node:internal/streams/destroy:122:10)
+    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)
+    at abortIncoming (node:_http_server:845:9)
+    at socketOnClose (node:_http_server:839:3)
+    at Socket.emit (node:events:520:35)
+    at TCP.<anonymous> (node:net:346:12)
+
