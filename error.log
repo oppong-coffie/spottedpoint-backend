@@ -27,3 +27,33 @@ Stack: Error: Request aborted
     at Socket.emit (node:events:520:35)
     at TCP.<anonymous> (node:net:346:12)
 
+[2026-06-13T18:37:00.446Z] PUT /api/team/6a2ad702b2347a2664b18e1a
+Error: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+Stack: ValidationError: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+    at Document.invalidate (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:3444:32)
+    at model.$set (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:1276:10)
+    at model.set [as social] (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\helpers\document\compile.js:192:13)
+    at Object.assign (<anonymous>)
+    at updateMember (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\controllers\teamController.js:21:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-06-13T18:37:51.629Z] PUT /api/team/6a2ad702b2347a2664b18e1a
+Error: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+Stack: ValidationError: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+    at Document.invalidate (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:3444:32)
+    at model.$set (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:1276:10)
+    at model.set [as social] (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\helpers\document\compile.js:192:13)
+    at Object.assign (<anonymous>)
+    at updateMember (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\controllers\teamController.js:21:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+[2026-06-13T18:38:24.403Z] PUT /api/team/6a2ad702b2347a2664b18e1a
+Error: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+Stack: ValidationError: TeamMember validation failed: social: Cast to Object failed for value "{"linkedin":"","twitter":"","instagram":""}" (type string) at path "social"
+    at Document.invalidate (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:3444:32)
+    at model.$set (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\document.js:1276:10)
+    at model.set [as social] (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\node_modules\mongoose\lib\helpers\document\compile.js:192:13)
+    at Object.assign (<anonymous>)
+    at updateMember (C:\Users\DELL\Desktop\work\spotted-point-media\spotted-point-media\backend\controllers\teamController.js:21:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
